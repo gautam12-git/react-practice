@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 
+const API_KEY = import.meta.env.VITE_API_KEY
+
 function useCurrency() {
   const [rates, setRates] = useState({})
 
@@ -7,7 +9,7 @@ function useCurrency() {
     async function fetchRates() {
       try {
         const res = await fetch(
-          'http://data.fixer.io/api/latest?access_key=ba3c57ed6ad83cd0656fb14d78fb1354'
+          'http://data.fixer.io/api/latest?access_key=${API_KEY}'
         )
         const json = await res.json()
 
