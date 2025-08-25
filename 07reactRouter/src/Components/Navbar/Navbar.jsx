@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 
-function Header() {
+function Navbar() {
   return (
     <header className="bg-gray-900 text-white shadow-md">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
@@ -81,4 +81,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Navbar
