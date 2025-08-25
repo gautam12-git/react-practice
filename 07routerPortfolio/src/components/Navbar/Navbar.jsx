@@ -6,12 +6,10 @@ function Navbar() {
   return (
     <header className="bg-gray-900 text-white shadow-md">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        {/* Logo / Brand */}
         <h1 className="text-2xl font-bold tracking-wide">
           G<span className="text-indigo-500">Front</span>
         </h1>
 
-        {/* Navigation */}
         <nav>
           <ul className="flex space-x-8">
             <li>

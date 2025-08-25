@@ -7,20 +7,16 @@ function Github() {
   return (
     <section className="min-h-screen bg-gray-50 flex flex-col items-center px-6 py-16">
       
-      {/* Heading */}
       <h2 className="text-4xl font-bold text-gray-900 mb-8">GitHub Profile</h2>
 
-      {/* Main Container */}
       <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col md:flex-row items-center gap-8 max-w-4xl w-full">
         
-        {/* Left Side - Avatar */}
         <img
           src={data.avatar_url}
           alt="GitHub Avatar"
           className="rounded-2xl shadow-md w-48 h-48 object-cover"
         />
 
-        {/* Right Side - Info */}
         <div className="flex flex-col gap-4">
           <h3 className="text-2xl font-semibold text-gray-900">{data.name || "Gautam Pandey"}</h3>
           <p className="text-gray-700">
@@ -36,7 +32,6 @@ function Github() {
             Public Repos: <span className="font-medium">{data.public_repos}</span>
           </p>
 
-          {/* GitHub Link Button */}
           <a
             href={data.html_url}
             target="_blank"
@@ -53,7 +48,6 @@ function Github() {
 
 export default Github;
 
-// Loader function
 export const gitHubInfo = async () => {
   const response = await fetch("https://api.github.com/users/gautam12-git");
   if (!response.ok) throw new Error("Failed to fetch GitHub data");

@@ -7,7 +7,7 @@ function Contact() {
      <section className="min-h-screen bg-gray-300 px-6 py-16 relative">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 items-start">
         
-        {/* Left Side - Contact Info */}
+       
         <div className="md:col-span-2 space-y-6">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Contact Me</h2>
           <p className="text-gray-700 text-lg mb-6">
@@ -28,7 +28,7 @@ function Contact() {
           </div>
         </div>
 
-        {/* Right Side - Empty Sidebar */}
+      
        
 
       </div>

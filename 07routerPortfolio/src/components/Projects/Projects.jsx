@@ -4,17 +4,14 @@ function Projects() {
   return (
      <section className="min-h-screen bg-gray-300 px-6 py-16">
       <div className="max-w-6xl mx-auto">
-        {/* Section Heading */}
         <h2 className="text-4xl font-bold text-gray-900 mb-10 text-center">
           My Projects
         </h2>
 
-        {/* JavaScript Projects */}
         <h3 className="text-2xl font-semibold text-gray-800 mb-6">
           JavaScript Projects
         </h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {/* JS Project Card 1 */}
           <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between">
             <div>
               <h4 className="text-xl font-semibold text-gray-900 mb-2">Expense Tracker</h4>
@@ -28,7 +25,6 @@ function Projects() {
             </div>
           </div>
 
-          {/* JS Project Card 2 */}
           <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between">
             <div>
               <h4 className="text-xl font-semibold text-gray-900 mb-2">Quiz App</h4>
@@ -42,7 +38,6 @@ function Projects() {
             </div>
           </div>
 
-          {/* JS Project Card 3 */}
           <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between">
             <div>
               <h4 className="text-xl font-semibold text-gray-900 mb-2">Weather App</h4>
@@ -58,12 +53,10 @@ function Projects() {
 
         </div>
 
-        {/* React Projects */}
         <h3 className="text-2xl font-semibold text-gray-800 mb-6">
           React Projects
         </h3>
         <div className="grid md:grid-cols-2 gap-6">
-          {/* React Project Card 1 */}
           <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between">
             <div>
               <h4 className="text-xl font-semibold text-gray-900 mb-2">React Password Generator</h4>
@@ -77,7 +70,6 @@ function Projects() {
             </div>
           </div>
 
-          {/* React Project Card 2 */}
           <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between">
             <div>
               <h4 className="text-xl font-semibold text-gray-900 mb-2">Currency Converter</h4>

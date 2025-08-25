@@ -6,16 +6,16 @@ function About() {
     <section className="min-h-screen bg-gray-300 flex items-center justify-center px-6 py-16">
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         
-        {/* Left Side - Image */}
+        
         <div className="flex justify-center">
           <img
-            src="/me.png" // replace with your profile photo or illustration
+            src="/me.png" 
             alt="Gautam Pandey"
             className="rounded-2xl shadow-lg w-72 h-72 object-cover"
           />
         </div>
 
-        {/* Right Side - Content */}
+        
         <div>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             About Me
