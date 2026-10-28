@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { projects, skillGroups } from '../../data/portfolioData'
+import WhatsAppLink from '../WhatsAppLink/WhatsAppLink'
 
 const technologies = ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'MySQL', 'REST APIs']
 
@@ -29,6 +30,7 @@ function Home() {
               <span className="text-slate-500">Find me on</span>
               <a href="https://github.com/gautam12-git" target="_blank" rel="noopener noreferrer" className="font-medium text-slate-300 transition hover:text-cyan-300 focus-visible:outline-2 focus-visible:outline-cyan-300">GitHub</a>
               <a href="https://www.linkedin.com/in/gautam-pandey07" target="_blank" rel="noopener noreferrer" className="font-medium text-slate-300 transition hover:text-cyan-300 focus-visible:outline-2 focus-visible:outline-cyan-300">LinkedIn</a>
+              <WhatsAppLink compact />
             </div>
           </div>
 
