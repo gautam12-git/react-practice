@@ -5,11 +5,11 @@ import SiteFooter from './components/SiteFooter/SiteFooter'
 
 function Layout() {
   return (
-    <>
+    <div className="site-shell">
       <Navbar />
       <Outlet />
       <SiteFooter />
-    </>
+    </div>
   )
 }
 

@@ -4,20 +4,20 @@ import { NavLink } from 'react-router-dom'
 
 function Navbar() {
   return (
-    <header className="bg-gray-900 text-white shadow-md">
-      <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        <h1 className="text-2xl font-bold tracking-wide">
-          G<span className="text-indigo-500">Front</span>
-        </h1>
+    <header className="sticky top-0 z-10 border-b border-slate-800/70 bg-slate-950/80 text-white shadow-md backdrop-blur">
+      <div className="container mx-auto flex flex-wrap items-center justify-between gap-4 px-6 py-4">
+        <NavLink to="/" className="text-xl font-bold tracking-wide focus-visible:outline-2 focus-visible:outline-cyan-300">
+          G<span className="text-cyan-400">autam</span>
+        </NavLink>
 
-        <nav>
-          <ul className="flex space-x-8">
+        <nav aria-label="Primary navigation" className="w-full sm:w-auto">
+          <ul className="flex flex-wrap gap-x-5 gap-y-3 text-sm sm:gap-x-6">
             <li>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `hover:text-indigo-400 transition-colors duration-300 ${
-                    isActive ? "text-indigo-500 font-semibold border-b-2 border-indigo-500" : ""
+                  `transition-colors duration-300 hover:text-cyan-300 focus-visible:outline-2 focus-visible:outline-cyan-300 ${
+                  isActive ? "font-semibold text-cyan-400" : "text-slate-300"
                   }`
                 }
               >
@@ -28,8 +28,8 @@ function Navbar() {
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
-                  `hover:text-indigo-400 transition-colors duration-300 ${
-                    isActive ? "text-indigo-500 font-semibold border-b-2 border-indigo-500" : ""
+                  `transition-colors duration-300 hover:text-cyan-300 focus-visible:outline-2 focus-visible:outline-cyan-300 ${
+                  isActive ? "font-semibold text-cyan-400" : "text-slate-300"
                   }`
                 }
               >
@@ -40,8 +40,8 @@ function Navbar() {
               <NavLink
                 to="/projects"
                 className={({ isActive }) =>
-                  `hover:text-indigo-400 transition-colors duration-300 ${
-                    isActive ? "text-indigo-500 font-semibold border-b-2 border-indigo-500" : ""
+                  `transition-colors duration-300 hover:text-cyan-300 focus-visible:outline-2 focus-visible:outline-cyan-300 ${
+                  isActive ? "font-semibold text-cyan-400" : "text-slate-300"
                   }`
                 }
               >
@@ -52,8 +52,8 @@ function Navbar() {
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
-                  `hover:text-indigo-400 transition-colors duration-300 ${
-                    isActive ? "text-indigo-500 font-semibold border-b-2 border-indigo-500" : ""
+                  `transition-colors duration-300 hover:text-cyan-300 focus-visible:outline-2 focus-visible:outline-cyan-300 ${
+                  isActive ? "font-semibold text-cyan-400" : "text-slate-300"
                   }`
                 }
               >
@@ -64,8 +64,8 @@ function Navbar() {
               <NavLink
                 to="/github"
                 className={({ isActive }) =>
-                  `hover:text-indigo-400 transition-colors duration-300 ${
-                    isActive ? "text-indigo-500 font-semibold border-b-2 border-indigo-500" : ""
+                  `transition-colors duration-300 hover:text-cyan-300 focus-visible:outline-2 focus-visible:outline-cyan-300 ${
+                  isActive ? "font-semibold text-cyan-400" : "text-slate-300"
                   }`
                 }
               >

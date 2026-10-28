@@ -1,90 +1,9 @@
 import React from 'react'
+import { projects } from '../../data/portfolioData'
 
 function Projects() {
   return (
-     <section className="min-h-screen bg-gray-300 px-6 py-16">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-gray-900 mb-10 text-center">
-          My Projects
-        </h2>
-
-        <h3 className="text-2xl font-semibold text-gray-800 mb-6">
-          JavaScript Projects
-        </h3>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between">
-            <div>
-              <h4 className="text-xl font-semibold text-gray-900 mb-2">Expense Tracker</h4>
-              <p className="text-gray-600 mb-4">
-                A simple JavaScript project that adds or removes your product expense and calculates total.
-              </p>
-            </div>
-            <div className="flex gap-3 mt-auto">
-              <a href="https://github.com/gautam12-git/js-projects/tree/main/expenseTracker" className="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition">GitHub</a>
-              <a href="https://expencetracker-5vx6.onrender.com" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Live</a>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between">
-            <div>
-              <h4 className="text-xl font-semibold text-gray-900 mb-2">Quiz App</h4>
-              <p className="text-gray-600 mb-4">
-                Interactive quiz app with multiple-choice questions and score tracking.
-              </p>
-            </div>
-            <div className="flex gap-3 mt-auto">
-              <a href="https://github.com/gautam12-git/js-projects/tree/main/quiz_App" className="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition">GitHub</a>
-              <a href="https://quizzapp-m40p.onrender.com" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Live</a>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between">
-            <div>
-              <h4 className="text-xl font-semibold text-gray-900 mb-2">Weather App</h4>
-              <p className="text-gray-600 mb-4">
-                Fetches real-time weather data using an API with location-based search.
-              </p>
-            </div>
-            <div className="flex gap-3 mt-auto">
-              <a href="https://github.com/gautam12-git/js-projects/tree/main/weather_Project" className="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition">GitHub</a>
-              <a href="https://weather-project-4dt2.onrender.com" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Live</a>
-            </div>
-          </div>
-
-        </div>
-
-        <h3 className="text-2xl font-semibold text-gray-800 mb-6">
-          React Projects
-        </h3>
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between">
-            <div>
-              <h4 className="text-xl font-semibold text-gray-900 mb-2">React Password Generator</h4>
-              <p className="text-gray-600 mb-4">
-                A modern version of password generator with range slider,checkbox for numbers and symbols and copy-to-clipboard.
-              </p>
-            </div>
-            <div className="flex gap-3 mt-auto">
-              <a href="https://github.com/gautam12-git/react-practice/tree/main/05password" className="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition">GitHub</a>
-              <a href="https://password-generator-9d5k.onrender.com" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Live</a>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between">
-            <div>
-              <h4 className="text-xl font-semibold text-gray-900 mb-2">Currency Converter</h4>
-              <p className="text-gray-600 mb-4">
-                Convert over 100 currencies instantly with live rates, easy input
-              </p>
-            </div>
-            <div className="flex gap-3 mt-auto">
-              <a href="https://github.com/gautam12-git/react-practice/tree/main/06currencyconverter" className="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition">GitHub</a>
-              <a href="https://currency-converterr.onrender.com" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Live</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <main className="min-h-screen px-6 py-16 text-white sm:py-20"><div className="mx-auto max-w-6xl"><p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">Selected work</p><h1 className="mt-2 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl">Projects built with curiosity and care.</h1><p className="mt-5 max-w-2xl leading-7 text-slate-300">A mix of full stack, React, and JavaScript work. Every card links directly to its source repository.</p><div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">{projects.map((project) => <article key={project.name} className="portfolio-card flex h-full flex-col p-6 transition duration-200 hover:-translate-y-1"><div className="flex items-start justify-between gap-4"><h2 className="text-2xl font-semibold">{project.name}</h2><span className="shrink-0 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-300">{project.category}</span></div><p className="mt-4 leading-7 text-slate-300">{project.description}</p><ul className="mt-5 flex-1 space-y-2 text-sm text-slate-400">{project.features.map((feature) => <li key={feature} className="before:mr-2 before:text-cyan-400 before:content-['•']">{feature}</li>)}</ul><div className="mt-6 flex flex-wrap gap-2">{project.technologies.map((technology) => <span key={technology} className="rounded-full border border-slate-700 bg-slate-900/70 px-3 py-1 text-xs text-slate-300">{technology}</span>)}</div><a href={project.github} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex min-h-11 items-center justify-center rounded-lg bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300">View on GitHub</a></article>)}</div></div></main>
   )
 }
 
